@@ -1,9 +1,9 @@
 package model;
 
 public class ContaEspecial extends Conta{
-	private int limite;
+	private double limite;
 	
-	public ContaEspecial(int numero, double saldo, int limite) {
+	public ContaEspecial(int numero, double saldo, double limite) {
 		super();
 		super.numero = numero;
 		super.saldo = saldo;
@@ -25,6 +25,6 @@ public class ContaEspecial extends Conta{
 	
 	@Override
 	public String toString() {
-		return "Numero: "+numero+"\nSaldo: "+saldo+"\nLimite: "+limite;
+		return "Numero: "+numero+"\nSaldo: R$ "+saldo+"\nLimite: "+limite;
 	}
 }

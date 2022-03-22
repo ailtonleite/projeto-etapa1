@@ -38,7 +38,7 @@ public class AppConta {
 				System.out.println("Digite um numero: ");
 				numero = teclado.nextInt();
 				saldo = 0;
-				int limite = 100;
+				double limite = teclado.nextDouble();
 				c = new ContaEspecial(numero, saldo, limite);
 				contas.adicionar(c);
 				break;
@@ -57,7 +57,7 @@ public class AppConta {
 				System.out.println("Digite um numero: ");
 				numero = teclado.nextInt();
 				System.out.println("Digite um valor para depositar: ");
-				valor = teclado.nextInt();
+				valor = teclado.nextDouble();
 				if(contas.depositar(numero, valor)) {
 					System.out.println("R$: "+valor+" depositados com sucesso");
 				}else {

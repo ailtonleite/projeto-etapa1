@@ -14,7 +14,7 @@ public abstract class Conta {
 	
 	@Override
 	public String toString() {
-		return "Numero: "+numero+"\nSaldo: "+saldo;
+		return "Numero: "+numero+"\nSaldo: R$"+saldo;
 	}
 	
 	public void depositar(double valor) {
