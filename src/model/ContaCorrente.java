@@ -9,10 +9,11 @@ public class ContaCorrente extends Conta{
 	}
 	
 	@Override
-	public void sacar(double valor) {
+	public boolean sacar(double valor) {
 		if(valor < getSaldo()) {
-			super.sacar(valor);
+			return super.sacar(valor);
 		}
+		return false;
 	}
 	
 	@Override

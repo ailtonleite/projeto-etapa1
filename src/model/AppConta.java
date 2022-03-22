@@ -12,8 +12,8 @@ public class AppConta {
 		Conta c;
 		
 		int opcao = 0;
-		int numero, valor;
-		double saldo;
+		int numero;
+		double saldo, valor;
 		
 		while(opcao != 7) {
 			System.out.println("===================");
@@ -46,7 +46,7 @@ public class AppConta {
 				System.out.println("Digite um numero: ");
 				numero = teclado.nextInt();
 				System.out.println("Digite um valor para sacar: ");
-				valor = teclado.nextInt();
+				valor = teclado.nextDouble();
 				if(contas.sacar(numero, valor)) {
 					System.out.println("R$: "+valor+" sacados com sucesso");
 				}else {

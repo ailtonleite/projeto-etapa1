@@ -35,17 +35,16 @@ public class GerenciaConta {
 		return false;
 	}
 	
-	public boolean sacar(int numero, int valor) {
+	public boolean sacar(int numero, double valor) {
 		for (int i = 0; i < contas.size(); i++) {
             if (contas.get(i).getNumero() == numero) {
-                contas.get(i).sacar(valor);
-                return true;
+                return contas.get(i).sacar(valor);
             }
         }
 		return false;
 	}
 	
-	public boolean depositar(int numero, int valor) {
+	public boolean depositar(int numero, double valor) {
 		for (int i = 0; i < contas.size(); i++) {
             if (contas.get(i).getNumero() == numero) {
                 contas.get(i).depositar(valor);

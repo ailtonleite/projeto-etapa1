@@ -23,9 +23,11 @@ public abstract class Conta {
 		}
 	}
 	
-	public void sacar(double valor) {
+	public boolean sacar(double valor) {
 		if(valor >= 0) {
 			saldo -= valor;
+			return true;
 		}
+		return false;
 	}
 }
